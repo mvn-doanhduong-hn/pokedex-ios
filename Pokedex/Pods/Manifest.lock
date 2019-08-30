@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - GradientProgress (1.0)
+  - HMSegmentedControl (1.5.3)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (0.6.1)
+  - MXSegmentedPager (3.3.0):
+    - HMSegmentedControl (= 1.5.3)
+    - MXPagerView (= 0.2.1)
+    - MXParallaxHeader (= 0.6.1)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxFlow (2.4.0):
+    - RxCocoa (>= 5.0.0)
+    - RxSwift (>= 5.0.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SwiftLint (0.34.0)
+  - XCGLogger (7.0.0):
+    - XCGLogger/Core (= 7.0.0)
+  - XCGLogger/Core (7.0.0):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire (>= 4.7.3)
+  - AlamofireImage (~> 3.5)
+  - GradientProgress
+  - MXSegmentedPager (~> 3.3.0)
+  - Reusable (>= 4.0.5)
+  - RxCocoa (>= 5.0.0)
+  - RxFlow (>= 2.4.0)
+  - RxSwift (>= 5.0.0)
+  - SwiftLint (>= 0.34.0)
+  - XCGLogger (>= 7.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - GradientProgress
+    - HMSegmentedControl
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - ObjcExceptionBridging
+    - Reusable
+    - RxCocoa
+    - RxFlow
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  GradientProgress: ee9c47443c80059b0367467d267b2dd9572de5e2
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxFlow: d8342d7ba30f78f509f84cf1d801fbd540406870
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
+  XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
+
+PODFILE CHECKSUM: e3011fbe303caddc024043783107635116fe18eb
+
+COCOAPODS: 1.7.5

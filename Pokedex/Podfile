@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Pokedex' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pokedex
+  pod 'RxSwift', '>= 5.0.0'
+  pod 'RxCocoa', '>= 5.0.0'
+  pod 'RxFlow', '>= 2.4.0'
+  pod 'Reusable', '>= 4.0.5'
+  pod 'SwiftLint', '>= 0.34.0'
+  pod 'Alamofire', '>= 4.7.3'
+  pod 'AlamofireImage', '~> 3.5'
+  pod 'XCGLogger', '>= 7.0.0'
+  pod 'MXSegmentedPager', '~> 3.3.0'
+  pod 'GradientProgress'
+
+  target 'PokedexTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PokedexUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

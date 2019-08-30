@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mra-Yq-I40">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item View Controller-->
+        <scene sceneID="9Zf-nf-FRq">
+            <objects>
+                <tableViewController id="Mra-Yq-I40" customClass="ItemViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dap-wA-bFY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="72" id="a3k-qs-Uyd" customClass="ItemTableViewCell" customModule="Pokedex" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a3k-qs-Uyd" id="39K-hV-Svi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PDH-Ht-5cU">
+                                            <rect key="frame" x="16" y="8" width="382" height="55.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" image="ItemTest" translatesAutoresizingMaskIntoConstraints="NO" id="NDg-45-yjb">
+                                                    <rect key="frame" x="0.0" y="8" width="48" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="iQL-Sv-YOp"/>
+                                                        <constraint firstAttribute="height" constant="40" id="tvb-oF-9Y4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Master Ball" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs9-XZ-7r0">
+                                                    <rect key="frame" x="50" y="17.5" width="280.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrK-NE-I4J">
+                                                    <rect key="frame" x="332.5" y="17.5" width="38.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Price" translatesAutoresizingMaskIntoConstraints="NO" id="ywj-ju-FUt">
+                                                    <rect key="frame" x="373" y="20" width="9" height="16"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PDH-Ht-5cU" firstAttribute="top" secondItem="39K-hV-Svi" secondAttribute="top" constant="8" id="3VQ-te-GMT"/>
+                                        <constraint firstAttribute="bottom" secondItem="PDH-Ht-5cU" secondAttribute="bottom" constant="8" id="c6Q-Fx-zP5"/>
+                                        <constraint firstItem="PDH-Ht-5cU" firstAttribute="leading" secondItem="39K-hV-Svi" secondAttribute="leading" constant="16" id="gVo-Zr-z0h"/>
+                                        <constraint firstAttribute="trailing" secondItem="PDH-Ht-5cU" secondAttribute="trailing" constant="16" id="mxs-Wk-zkg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemImageView" destination="NDg-45-yjb" id="3pY-Ah-rug"/>
+                                    <outlet property="nameLabel" destination="hs9-XZ-7r0" id="EZ7-H0-ZwH"/>
+                                    <outlet property="priceLabel" destination="DrK-NE-I4J" id="Vv9-54-f7k"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mra-Yq-I40" id="lmk-Fg-huL"/>
+                            <outlet property="delegate" destination="Mra-Yq-I40" id="kTS-lu-Bnz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i51-mt-eT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ItemTest" width="26" height="26"/>
+        <image name="Price" width="9" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatsPageView" customModule="Pokedex" customModuleProvider="target">
+            <connections>
+                <outlet property="basicStatsView" destination="HOI-bU-g0g" id="oki-Su-fMD"/>
+                <outlet property="breedingView" destination="79x-D5-0fj" id="pCz-Fo-eQb"/>
+                <outlet property="scrollView" destination="Atv-Cm-yWm" id="MqZ-Ez-aaN"/>
+                <outlet property="weaknessesView" destination="uc8-xc-MZC" id="9XF-eg-eoB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atv-Cm-yWm">
+                    <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-sP-MOX">
+                            <rect key="frame" x="0.0" y="20" width="402" height="1000"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-bU-g0g" customClass="BasicStatsView" customModule="Pokedex" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="402" height="144"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="144" id="lDV-VV-Jzb"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-xc-MZC" customClass="WeaknessesView" customModule="Pokedex" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="154" width="402" height="332"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="332" id="G5I-lf-EtM"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="332" id="cqW-Wl-jql"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXS-cL-4wn" customClass="AbilitiesView" customModule="Pokedex" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="496" width="402" height="197"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="197" id="z5S-A1-oKM"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79x-D5-0fj" customClass="BreedingView" customModule="Pokedex" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="703" width="402" height="140"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="rYM-1L-RvW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="uc8-xc-MZC" firstAttribute="top" secondItem="HOI-bU-g0g" secondAttribute="bottom" constant="10" id="AOp-fC-FCe"/>
+                                <constraint firstItem="uc8-xc-MZC" firstAttribute="leading" secondItem="XX0-sP-MOX" secondAttribute="leading" id="IL0-OA-r8p"/>
+                                <constraint firstItem="HOI-bU-g0g" firstAttribute="top" secondItem="XX0-sP-MOX" secondAttribute="top" id="J29-H1-Aob"/>
+                                <constraint firstItem="HOI-bU-g0g" firstAttribute="leading" secondItem="XX0-sP-MOX" secondAttribute="leading" id="JMZ-nN-9IT"/>
+                                <constraint firstItem="79x-D5-0fj" firstAttribute="leading" secondItem="XX0-sP-MOX" secondAttribute="leading" id="N5z-jH-f0f"/>
+                                <constraint firstAttribute="trailing" secondItem="79x-D5-0fj" secondAttribute="trailing" id="NjI-IL-tye"/>
+                                <constraint firstItem="QXS-cL-4wn" firstAttribute="leading" secondItem="XX0-sP-MOX" secondAttribute="leading" id="Uue-05-UO9"/>
+                                <constraint firstAttribute="trailing" secondItem="HOI-bU-g0g" secondAttribute="trailing" id="XFd-Lb-dBm"/>
+                                <constraint firstAttribute="trailing" secondItem="QXS-cL-4wn" secondAttribute="trailing" id="Xjy-dd-7bV"/>
+                                <constraint firstItem="79x-D5-0fj" firstAttribute="top" secondItem="QXS-cL-4wn" secondAttribute="bottom" constant="10" id="b7z-8t-aeg"/>
+                                <constraint firstAttribute="height" constant="1000" id="e9x-xX-7zx"/>
+                                <constraint firstItem="QXS-cL-4wn" firstAttribute="top" secondItem="uc8-xc-MZC" secondAttribute="bottom" constant="10" id="g90-Kh-SkV"/>
+                                <constraint firstAttribute="width" constant="402" id="nbN-eh-biU"/>
+                                <constraint firstAttribute="trailing" secondItem="uc8-xc-MZC" secondAttribute="trailing" id="spz-Y9-rTA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XX0-sP-MOX" secondAttribute="trailing" constant="12" id="NXE-yi-KuD"/>
+                        <constraint firstItem="XX0-sP-MOX" firstAttribute="top" secondItem="Atv-Cm-yWm" secondAttribute="top" constant="20" id="dIs-pn-IeL"/>
+                        <constraint firstItem="XX0-sP-MOX" firstAttribute="leading" secondItem="Atv-Cm-yWm" secondAttribute="leading" id="qHo-Ug-2Mp"/>
+                        <constraint firstAttribute="bottom" secondItem="XX0-sP-MOX" secondAttribute="bottom" constant="-80" id="vrw-oz-9ch"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Atv-Cm-yWm" secondAttribute="trailing" id="IjC-Yn-2Af"/>
+                <constraint firstItem="Atv-Cm-yWm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lIF-JS-bhk"/>
+                <constraint firstItem="Atv-Cm-yWm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vaJ-ZJ-4CW"/>
+                <constraint firstItem="Atv-Cm-yWm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wE1-59-cLi"/>
+                <constraint firstItem="Atv-Cm-yWm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yh4-oQ-C8P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="37.681159420289859" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
