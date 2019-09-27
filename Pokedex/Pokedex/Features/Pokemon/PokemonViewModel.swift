@@ -35,9 +35,10 @@ class PokemonViewModel: ServicesViewModel {
         
         searchText
             .skip(1)
-            .throttle(0.5, latest: true, scheduler: MainScheduler.instance)
-            .asObservable().subscribe(onNext: { string in
-            self.requestPokemonList.onNext(())
+            //.debounce(RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
+            .throttle(2, latest: true, scheduler: MainScheduler.instance)
+.asObservable().subscribe(onNext: { string in
+                self.requestPokemonList.onNext(())
         }).disposed(by: disposeBag)
     }
 }
